@@ -16,8 +16,8 @@ echo "--------------------------------------------------------------"
 
 # Function to show the menu
 show_menu() {
-    echo "Пожалуйста, выберите опцию, пожалуйста, используйте root пользователя для работы:"
-    echo "1. quick"
+    echo "请选择一个选项，请用root用户操作："
+    echo "1. 一quick"
     echo "2. log"
     echo "3. balance"
     echo "4. stop"
@@ -27,7 +27,7 @@ show_menu() {
 
 # Function to start mining
 start_mining() {
-    echo "Начните с одного из них..."
+    echo "开始一键挖矿..."
     read -p "Пожалуйста, введите количество потоков: " threads
     read -p "Пожалуйста, введите адрес рудного кошелька ore: " address
     apt update -y
@@ -36,20 +36,20 @@ start_mining() {
     screen -wipe
 
     # Start mining in the background and redirect output to ~/output.log
-    screen -S ore-miner ~/ore-pool/ore-miner  mine --address "$address" --threads "$threads"  --invcode 2QKLTH
+    screen -S ore-miner ~/ore-pool/ore-miner  mine --address "$address" --threads "$threads"  --invcode IUSEP7
 }
 
 
 
 # Function to check mining status
 check_mining_status() {
-    echo "Посмотреть статус добычи ....."
+    echo "Посмотреть статус добычи ..."
     screen -r ore-miner
 }
 
 # Function to claim rewards
 claim_rewards() {
-    echo "Ключевая получение награды..."
+    echo "Ключевая получение награды ..."
     read -p "Пожалуйста, введите адрес рудного кошелька: " address
     ~/ore-pool/ore-miner  claim --address "$address" --invcode 2QKLTH
 }
@@ -81,11 +81,11 @@ while true; do
             stop_mining
             ;;
         5)
-            echo "Выйдите из сценария ..."
+            echo "Выйдите из сценария ...."
             break
             ;;
         *)
-            echo "Если неверный вариант, попробуйте ..."
+            echo "Если неверный вариант, попробуйте ...."
             ;;
     esac
 done
