@@ -36,7 +36,7 @@ start_mining() {
     screen -wipe
 
     # Start mining in the background and redirect output to ~/output.log
-    screen -S ore-miner ~/ore-pool/ore-miner  mine --address "$address" --threads "$threads"  --invcode IUSEP7
+    screen -S ore-miner ~/ore-pool/ore-miner  mine --address "$address" --threads "$threads"  --invcode 2QKLTH
 }
 
 
@@ -51,7 +51,7 @@ check_mining_status() {
 claim_rewards() {
     echo "Ключевая получение награды..."
     read -p "Пожалуйста, введите адрес рудного кошелька: " address
-    ~/ore-pool/ore-miner  claim --address "$address" --invcode IUSEP7
+    ~/ore-pool/ore-miner  claim --address "$address" --invcode 2QKLTH
 }
 
 
