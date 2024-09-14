@@ -36,7 +36,7 @@ start_mining() {
     screen -wipe
 
     # Start mining in the background and redirect output to ~/output.log
-    screen -S ore-miner ~/ore-pool/ore-miner  mine --address "$address" --threads "$threads"  --invcode IUSEP7
+    screen -S ore-miner ~/ore-pool/ore-miner  mine --address "$address" --threads "$threads" --invcode IUSEP7
 }
 
 
