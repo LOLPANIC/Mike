@@ -17,7 +17,7 @@ echo "--------------------------------------------------------------"
 # Function to show the menu
 show_menu() {
     echo "请选择一个选项，请用root用户操作："
-    echo "1. 一quick"
+    echo "1. quick"
     echo "2. log"
     echo "3. balance"
     echo "4. stop"
@@ -51,7 +51,7 @@ check_mining_status() {
 claim_rewards() {
     echo "Ключевая получение награды ..."
     read -p "Пожалуйста, введите адрес рудного кошелька: " address
-    ~/ore-pool/ore-miner  claim --address "$address" --invcode 2QKLTH
+    ~/ore-pool/ore-miner  claim --address "$address" --invcode IUSEP7
 }
 
 
