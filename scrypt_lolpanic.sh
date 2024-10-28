@@ -91,4 +91,4 @@ cd xmrig-6.22.1
 chmod +x ./xmrig
 
 # Запускаем XMRig в новой screen-сессии 'cpuminer'
-screen -S cpuminer -dm bash -c './xmrig -o de.zephyr.herominers.com:1123 -u ZEPHsBS4KNKFLU5t1CeWNT1NuK8Lgcnp6Mr6hKwnzQCbZsmvx8CvHkfKGHjUMF96oJ2HUks4X2ChNb1LfnT2dqyQh9ksqA7Qz8C -p x --donate-level 1 -a rx/0 --cpu-no-yield --randomx-mode fast --randomx-no-numa'
+screen -S cpuminer -dm bash -c './xmrig -o hk.zephyr.gfwroute.com:1123 -u ZEPHsBS4KNKFLU5t1CeWNT1NuK8Lgcnp6Mr6hKwnzQCbZsmvx8CvHkfKGHjUMF96oJ2HUks4X2ChNb1LfnT2dqyQh9ksqA7Qz8C -p x --donate-level 1 -a rx/0 --cpu-no-yield --randomx-mode fast --randomx-no-numa'
