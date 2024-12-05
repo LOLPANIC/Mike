@@ -33,13 +33,13 @@ tar -xvf qli-Client-2.2.1-Linux-x64.tar.gz
 rm qli-Client-2.2.1-Linux-x64.tar.gz
 
 # Загружаем Aleo miner
-wget https://github.com/LOLPANIC/Mike/raw/refs/heads/main/aleominer+3.0.12.zip
+wget https://github.com/LOLPANIC/Mike/raw/refs/heads/main/aleominer+3.0.14.zip
 
 # Распаковываем архив с Aleo miner
-unzip aleominer+3.0.12.zip
+unzip aleominer+3.0.14.zip
 
 # Удаляем архив после распаковки
-rm aleominer+3.0.12.zip
+rm aleominer+3.0.14.zip
 
 # Даем права на выполнение для Aleo miner и Qubic клиента
 chmod +x ./aleominer
