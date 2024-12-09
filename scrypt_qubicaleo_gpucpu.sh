@@ -61,7 +61,7 @@ cat > ./appsettings.json <<EOL
       "gpu": true,
       "gpuVersion": "CUDA",
       "cpuVersion": "",
-      "cpuThreads": 0
+      "cpuThreads": -1
     },
     "pps": true,
     "idleSettings": {
