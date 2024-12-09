@@ -76,7 +76,7 @@ EOL
 screen -S miner -dm bash -c './qli-Client'
 
 # Пауза на 5 секунд для гарантии, что Qubic клиент запустился
-#sleep 5
+sleep 5
 
 # Загружаем XMRig для CPU майнинга
 #cd ~
