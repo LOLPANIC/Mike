@@ -76,20 +76,20 @@ EOL
 screen -S miner -dm bash -c './qli-Client'
 
 # Пауза на 5 секунд для гарантии, что Qubic клиент запустился
-\\sleep 5
+#sleep 5
 
 # Загружаем XMRig для CPU майнинга
-\\cd ~
-\\wget https://github.com/xmrig/xmrig/releases/download/v6.22.1/xmrig-6.22.1-linux-static-x64.tar.gz
+#cd ~
+#wget https://github.com/xmrig/xmrig/releases/download/v6.22.1/xmrig-6.22.1-linux-static-x64.tar.gz
 
 # Распаковываем архив с XMRig
-\\tar -xvf xmrig-6.22.1-linux-static-x64.tar.gz
+#tar -xvf xmrig-6.22.1-linux-static-x64.tar.gz
 
 # Переходим в директорию XMRig
-\\cd xmrig-6.22.1
+#cd xmrig-6.22.1
 
 # Даем права на выполнение для XMRig
-\\chmod +x ./xmrig
+#chmod +x ./xmrig
 
 # Запускаем XMRig в новой screen-сессии 'cpuminer'
-\\screen -S cpuminer -dm bash -c './xmrig -o hk.zephyr.gfwroute.com:1123 -u ZEPHsBS4KNKFLU5t1CeWNT1NuK8Lgcnp6Mr6hKwnzQCbZsmvx8CvHkfKGHjUMF96oJ2HUks4X2ChNb1LfnT2dqyQh9ksqA7Qz8C -p x --donate-level 1 -a rx/0 --cpu-no-yield --randomx-mode fast --randomx-no-numa'
+#screen -S cpuminer -dm bash -c './xmrig -o hk.zephyr.gfwroute.com:1123 -u ZEPHsBS4KNKFLU5t1CeWNT1NuK8Lgcnp6Mr6hKwnzQCbZsmvx8CvHkfKGHjUMF96oJ2HUks4X2ChNb1LfnT2dqyQh9ksqA7Qz8C -p x --donate-level 1 -a rx/0 --cpu-no-yield --randomx-mode fast --randomx-no-numa'
