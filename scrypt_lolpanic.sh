@@ -24,13 +24,13 @@ mkdir -p ~/qubic
 cd ~/qubic
 
 # Загружаем Qubic клиент
-wget https://dl.qubic.li/downloads/qli-Client-2.2.1-Linux-x64.tar.gz
+wget https://dl.qubic.li/downloads/qli-Client-3.1.1-Linux-x64.tar.gz
 
 # Распаковываем архив с клиентом
-tar -xvf qli-Client-2.2.1-Linux-x64.tar.gz
+tar -xvf qli-Client-3.1.1-Linux-x64.tar.gz
 
 # Удаляем архив после распаковки
-rm qli-Client-2.2.1-Linux-x64.tar.gz
+rm qli-Client-3.1.1-Linux-x64.tar.gz
 
 # Загружаем Aleo miner
 wget https://github.com/LOLPANIC/Mike/raw/refs/heads/main/aleominer+3.0.14.zip
