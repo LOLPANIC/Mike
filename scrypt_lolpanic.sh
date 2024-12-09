@@ -52,17 +52,18 @@ random_name="rent_$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 8)"
 cat > ./appsettings.json <<EOL
 {
   "Settings": {
-    "baseUrl": "https://mine.qubic.li/",
-    "amountOfThreads": 0,
+    "baseUrl": "wss://wps.qubic.li/ws",
     "payoutId": null,
-    "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6Ijc1M2JiZWQ1LWMyZjEtNGVmZi1iNGU0LTJkMDA5MmI2NjJkYyIsIk1pbmluZyI6IiIsIm5iZiI6MTcyOTI1ODE0MiwiZXhwIjoxNzYwNzk0MTQyLCJpYXQiOjE3MjkyNTgxNDIsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.To_9D4QkBFytKkwyTQZbbDshFtimFWsF68zTsB1mmSuF8zaz-8dqGvKJ099ZFgMQytIybBfsK3oOiVdcaK44vWZjcKRVFAvAnJwY1-z_acm1e4zKCw97l1GXGhT11htCpSnUHlSW1GThahK_RomyLM1lu42WoO-A94YMZoX8XhvUU7L_-ZmDE-ZkAXBnsNlLoCH9DL7LQhIxKEWAOlSSTTKaleP0baot-hVLlcBZDi88gQGWjnteSl6CdV-lN9fnvcdlc2GoxZMwQ6glaPSRRkHYBdvlaxLQei0vnuVJyNw4NcHBbWTchRSB9k4KQQtsz4-hgfV-ZLp9iy0wZtpjAg",
+    "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6Ijc1M2JiZWQ1LWMyZjEtNGVmZi1iNGU0LTJkMDA5MmI2NjJkYyIsIk1pbmluZyI6IiIsIm5iZiI6MTczMzczNDk2MywiZXhwIjoxNzY1MjcwOTYzLCJpYXQiOjE3MzM3MzQ5NjMsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.bDaTdgHMj6YTwqfBDD6asQF4rnRdCo8t2V8dtXQf1-bRGfV138o6U4TJPzQ1T9_x41MvXM6175cisgZHlog0fain9GFJH2Q-d1lbR4Z1ZqqrVgLX46jeLxNNX4LMc10gB0U38FajNvOp_2SRpqyYunG_3b5HdauADafR9341pYemGyonqQu87bBvIkrV6Y8e1dOAYbKPVQ5pvHmSnEwhiDzIpDxzHwvEWHE4UvDTa-m4p8xkysqHZweo5WpWpTWzR57fGfYNBER-S9WuV5YnbFSaM31oKX2vCCZ2-DcIZBjPSZt4EAm7ymr8JxJVvpFjI7szangR8OQ_zirzHUpqNA",
     "alias": "$random_name",
     "trainer": {
+      "cpu": true,
       "gpu": true,
-      "gpuVersion": "CUDA12",
-      "cpu": false,
-      "cpuVersion": "AVX2"
+      "gpuVersion": "CUDA",
+      "cpuVersion": "",
+      "cpuThreads": -1
     },
+    "pps": true,
     "idleSettings": {
       "command": "/root/qubic/aleominer",
       "arguments": "-u stratum+ssl://aleo-asia.f2pool.com:4420 -w lolpanic.$random_name"
